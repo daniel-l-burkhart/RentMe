@@ -1,0 +1,34 @@
+diff a/RentMe/View/Home.cs b/RentMe/View/Home.cs	(rejected hunks)
+@@ -1371,22 +1371,22 @@
+                     var textBox = control as TextBox;
+                     if (textBox != null)
+                     {
+-                    textBox.Text = string.Empty;
+-                    textBox.BackColor = Color.White;
+-                    textBox.Text = string.Empty;
+-                    textBox.Tag = "Incorrect";
+-                }
++                        textBox.Text = string.Empty;
++                        textBox.BackColor = Color.White;
++                        textBox.Text = string.Empty;
++                        textBox.Tag = "Incorrect";
++                    }
+                 }
+                 else if (control.GetType() == typeof (ComboBox))
+                 {
+                     var comboBox = control as ComboBox;
+                     if (comboBox != null)
+                     {
+-                    comboBox.Text = string.Empty;
+-                    comboBox.BackColor = Color.White;
+-                    comboBox.Text = string.Empty;
+-                    comboBox.Tag = "Incorrect";
+-                }
++                        comboBox.Text = string.Empty;
++                        comboBox.BackColor = Color.White;
++                        comboBox.Text = string.Empty;
++                        comboBox.Tag = "Incorrect";
++                    }
+                 }
+                 if (control.HasChildren &&
+                     (control.GetType() == typeof (TableLayoutPanel) || control.GetType() == typeof (FlowLayoutPanel)))

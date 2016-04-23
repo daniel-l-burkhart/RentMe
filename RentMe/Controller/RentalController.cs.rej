@@ -1,0 +1,11 @@
+diff a/RentMe/Controller/RentalController.cs b/RentMe/Controller/RentalController.cs	(rejected hunks)
+@@ -4,6 +4,9 @@
+ 
+ namespace RentMe.Controller
+ {
++    /// <summary>
++    ///     Controller for rental transactions.
++    /// </summary>
+     internal class RentalController
+     {
+         /// <summary>

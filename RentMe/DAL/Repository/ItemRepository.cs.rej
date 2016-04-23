@@ -1,0 +1,13 @@
+diff a/RentMe/DAL/Repository/ItemRepository.cs b/RentMe/DAL/Repository/ItemRepository.cs	(rejected hunks)
+@@ -108,10 +108,7 @@
+                         {
+                             var currItem = new Item
+                             {
+-                                ItemId =
+-                                    (Convert.IsDBNull(dataReader["itemID"])
+-                                        ? int.MinValue
+-                                        : (int) dataReader["itemID"]),
++                                ItemId = dataReader["itemID"] as string,  
+                                 Name = dataReader["name"] as string,
+                                 Type = dataReader["type"] as string,
+                                 Style = dataReader["style"] as string,
